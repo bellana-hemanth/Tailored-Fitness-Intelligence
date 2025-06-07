@@ -1,0 +1,7 @@
+### 📁 results/
+Graphical results and performance summaries.
+
+- `har_confusion_matrix.png`
+- `hr_loss_curve.png`
+- `activity_wise_mae.csv`
+- `comparison_chart.png`
