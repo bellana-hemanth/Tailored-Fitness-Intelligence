@@ -1,0 +1,12 @@
+### 📁 utils/
+Reusable helper functions and classes.
+
+- `preprocessing.py`: Standardization, segmentation
+- `data_loader.py`: Batching and formatting for training
+- `metrics.py`: Custom MAE, MAPE, RMSE calculations
+- `plot_utils.py`: Training loss & accuracy visualization
+
+```python
+# metrics.py
+def mean_absolute_error(y_true, y_pred):
+    return np.mean(np.abs(y_true - y_pred))
