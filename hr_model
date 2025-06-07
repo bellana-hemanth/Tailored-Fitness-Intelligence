@@ -1,0 +1,24 @@
+### 📁 hr_model/
+Implements the deep learning pipeline for heart rate estimation.
+
+Files:
+- `train_hr.py`: Training script
+- `model_hr.py`: TCN-GRU-Attention model
+- `hr_config.json`: Hyperparameters
+- `hr_model_weights.h5`: Saved model weights
+
+```python
+# model_hr.py
+class HRPredictionModel(tf.keras.Model):
+    def __init__(self):
+        super().__init__()
+        self.tcn = TCN(nb_filters=64, kernel_size=5, return_sequences=True)
+        self.gru = tf.keras.layers.GRU(128, return_sequences=True)
+        self.attn = tf.keras.layers.Attention()
+        self.fc = tf.keras.layers.Dense(1)
+
+    def call(self, x):
+        x = self.tcn(x)
+        x = self.gru(x)
+        x = self.attn([x, x])
+        return self.fc(x)
