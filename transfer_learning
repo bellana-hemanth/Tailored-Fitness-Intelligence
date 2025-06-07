@@ -1,0 +1,7 @@
+### 📁 transfer_learning/
+Uses pseudo-labeling to fine-tune HR prediction on datasets lacking HR annotations.
+
+Files:
+- `pseudo_label_generator.py`: Generates synthetic HR labels from PAMAP2-trained model.
+- `transfer_train.py`: Fine-tunes the model with pseudo-labeled IM data.
+- `evaluation_transfer.py`: Performance comparison pre/post transfer learning.
