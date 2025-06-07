@@ -1,0 +1,9 @@
+### 📁 data/
+This folder contains cleaned and segmented sensor datasets from:
+- PAMAP2 (with heart rate labels)
+- IM-SportingBehaviors (used for transfer learning with pseudo-labels)
+
+Files include:
+- `pamap2_processed.csv`
+- `im_sporting_preprocessed.csv`
+- `combined_data_segments.npy`
