@@ -1,0 +1,6 @@
+### 📁 notebooks/
+Exploratory and reproducible training notebooks.
+
+- `HAR_Evaluation.ipynb`: Confusion matrix, accuracy plots for HAR model
+- `HR_Prediction.ipynb`: HR model loss/MAE graphs
+- `Transfer_Learning_HR.ipynb`: Impact of transfer learning
